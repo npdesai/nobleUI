@@ -169,7 +169,7 @@ export const MENU: MenuItem[] = [
         link: '/advanced-ui/owl-carousel',
       },
       {
-        label: 'SortableJs',
+        label: 'Drag & drop',
         link: '/advanced-ui/sortablejs',
       },
       {
@@ -230,13 +230,13 @@ export const MENU: MenuItem[] = [
     icon: 'pie-chart',
     subItems: [
       {
-        label: 'ApexCharts',
+        label: 'Charts',
         link: '/charts-graphs/apexcharts',
       },
-      {
-        label: 'ChartJs',
-        link: '/charts-graphs/chartjs',
-      },
+      // {
+      //   label: 'ChartJs',
+      //   link: '/charts-graphs/chartjs',
+      // },
     ]
   },
   {
@@ -247,14 +247,14 @@ export const MENU: MenuItem[] = [
         label: 'Basic tables',
         link: '/tables/basic-table',
       },
-      {
-        label: 'Data table',
-        link: '/tables/data-table',
-      },
-      {
-        label: 'Ngx-datatable',
-        link: '/tables/ngx-datatable'
-      }
+      // {
+      //   label: 'Data table',
+      //   link: '/tables/data-table',
+      // },
+      // {
+      //   label: 'Ngx-datatable',
+      //   link: '/tables/ngx-datatable'
+      // }
     ]
   },
   {

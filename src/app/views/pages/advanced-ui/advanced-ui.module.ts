@@ -8,12 +8,15 @@ import { AngularCropperjsModule } from 'angular-cropperjs';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SortablejsModule } from 'ngx-sortablejs';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AdvancedUiComponent } from './advanced-ui.component';
 import { ImageCropperComponent } from './image-cropper/cropper.component';
 import { OwlCarouselComponent } from './owl-carousel/owl-carousel.component';
 import { SweetAlertComponent } from './sweet-alert/sweet-alert.component';
 import { SortablejsComponent } from './sortablejs/sortablejs.component';
+import { ListBoxComponent, ListBoxAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 const routes: Routes = [
   {
@@ -58,6 +61,7 @@ const routes: Routes = [
       ghostClass: 'bg-light',
     }),
     SweetAlert2Module.forRoot(),
+    ReactiveFormsModule, ListBoxAllModule
   ]
 })
 export class AdvancedUiModule { }

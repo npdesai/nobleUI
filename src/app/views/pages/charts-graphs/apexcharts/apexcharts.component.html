@@ -9,8 +9,8 @@
   <div class="col-md-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Ng-ApexCharts</h4>
-        <p class=“text-muted”>Read the <a href="https://github.com/apexcharts/ng-apexcharts" target="_blank"> Official Ng-ApexCharts Documentation </a>for a full list of instructions and other options.</p>
+        <h4 class="card-title">Syncfusion Charts</h4>
+        <p class=“text-muted”>Read the <a href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started" target="_blank"> Official Syncfusion Documentation </a>for a full list of instructions and other options.</p>
       </div>
     </div>
   </div>
@@ -21,18 +21,12 @@
     <div class="card">
       <div class="card-body">
         <h6 class="card-title">Line chart</h6>
-
-        <apx-chart
-          [series]="lineChartOptions.series"
-          [chart]="lineChartOptions.chart"
-          [colors]="lineChartOptions.colors"
-          [grid]="lineChartOptions.grid"
-          [xaxis]="lineChartOptions.xaxis"
-          [yaxis]="lineChartOptions.yaxis"
-          [markers]="lineChartOptions.markers"
-          [legend]="lineChartOptions.legend"
-          [stroke]="lineChartOptions.stroke"
-        ></apx-chart>
+        <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+            <e-series-collection>
+                <e-series [dataSource]='chartData' type='MultiColoredLine' xName='x' yName='y' name='WO' width=2 [marker]='marker'
+                pointColorMapping= 'color'></e-series>
+            </e-series-collection>
+        </ejs-chart>  
 
       </div>
     </div>
@@ -41,16 +35,11 @@
     <div class="card">
       <div class="card-body">
         <h6 class="card-title">Bar chart</h6>
-
-        <apx-chart
-          [series]="barChartOptions.series"
-          [chart]="barChartOptions.chart"
-          [colors]="barChartOptions.colors"
-          [grid]="barChartOptions.grid"
-          [xaxis]="barChartOptions.xaxis"
-          [yaxis]="barChartOptions.yaxis"
-          [plotOptions]="barChartOptions.plotOptions"
-        ></apx-chart>
+        <ejs-chart id="chart-container1" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+            <e-series-collection>
+                <e-series [dataSource]='chartData' type='Bar' xName='x' yName='y' name='India'></e-series>
+            </e-series-collection>
+        </ejs-chart>       
 
       </div>
     </div>
@@ -63,19 +52,11 @@
       <div class="card-body">
         <h6 class="card-title">Area chart</h6>
 
-        <apx-chart
-          [series]="areaChartOptions.series"
-          [chart]="areaChartOptions.chart"
-          [colors]="areaChartOptions.colors"
-          [stroke]="areaChartOptions.stroke"
-          [dataLabels]="areaChartOptions.dataLabels"
-          [xaxis]="areaChartOptions.xaxis"
-          [yaxis]="areaChartOptions.yaxis"
-          [grid]="areaChartOptions.grid"
-          [tooltip]="areaChartOptions.tooltip"
-          [fill]="areaChartOptions.fill"
-          [legend]="areaChartOptions.legend"
-        ></apx-chart>
+        <ejs-chart id="chart-container2" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+            <e-series-collection>
+                <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' fill='#69D2E7' opacity=0.6></e-series>
+            </e-series-collection>
+        </ejs-chart>
 
       </div>
     </div>
@@ -85,28 +66,21 @@
       <div class="card-body">
         <h6 class="card-title">Mixed chart</h6>
 
-        <apx-chart
-          [series]="mixedChartOptions.series"
-          [chart]="mixedChartOptions.chart"
-          [colors]="mixedChartOptions.colors"
-          [grid]="mixedChartOptions.grid"
-          [stroke]="mixedChartOptions.stroke"
-          [plotOptions]="mixedChartOptions.plotOptions"
-          [legend]="mixedChartOptions.legend"
-          [fill]="mixedChartOptions.fill"
-          [labels]="mixedChartOptions.labels"
-          [markers]="mixedChartOptions.markers"
-          [xaxis]="mixedChartOptions.xaxis"
-          [yaxis]="mixedChartOptions.yaxis"
-          [tooltip]="mixedChartOptions.tooltip"
-        ></apx-chart>
+        <ejs-chart id="chart-container3" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+            <e-series-collection>
+                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y' name='UK'></e-series>
+                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1' name='Germany'></e-series>
+                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y2' name='France'></e-series>
+                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y3' name='Italy'></e-series>
+            </e-series-collection>
+        </ejs-chart>
 
       </div>
     </div>
   </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-xl-6 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
@@ -229,4 +203,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

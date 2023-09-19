@@ -34,7 +34,13 @@ export class ApexchartsComponent implements OnInit {
     fontFamily     : "'Roboto', Helvetica, sans-serif"
   }
 
-  
+  public chartData?: Object[];
+  public title?: string;
+  public primaryXAxis?: Object;
+  public primaryYAxis?: Object;
+  public linechartData:object[];
+  public marker?: Object;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -54,6 +60,43 @@ export class ApexchartsComponent implements OnInit {
     if (document.querySelector('html')?.getAttribute('dir') === 'rtl') {
       this.addRtlOptions();
     }
+
+    this.linechartData = [    
+      {
+        x: 'Nikunj Desai',
+        y: 75,
+      },
+      {
+        x: 'Nikunj Desai1',
+        y: 45,
+      },
+      {
+        x: 'Nikunj Desai2',
+        y: 35,
+      },
+      {
+        x: 'Nikunj Desai3',
+        y: 45,
+      },
+      {
+        x: 'Nikunj Desai4',
+        y: 55,
+      },
+      {
+        x: 'Nikunj Desai5',
+        y: 65,
+      },
+    ];
+
+    this.chartData = [{ x: 2005, y: 28 , color: 'red'}, { x: 2006, y: 25, color:'green'},
+    { x: 2007, y: 26, color: '#ff0097' }, { x: 2008, y: 27, color: 'crimson' },
+    { x: 2009, y: 32, color: 'blue' }, { x: 2010, y: 35 ,color: 'darkorange'}];
+    this.marker = { visible: true, width: 10, height: 10 };
+    this.primaryXAxis = {
+        interval: 10
+    };
+
+    this.title = 'Climate Graph-2012';
 
   }
 

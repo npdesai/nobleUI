@@ -8,6 +8,7 @@ import { DataTableComponent } from './data-table/data-table.component';
 import { NgxDatatableComponent } from './ngx-datatable/ngx-datatable.component';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { GridModule,PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 
 const routes: Routes = [
   {
@@ -40,7 +41,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    NgxDatatableModule
-  ]
+    NgxDatatableModule,
+    GridModule
+  ],
+  providers: [PageService, SortService, FilterService, GroupService],
 })
 export class TablesModule { }

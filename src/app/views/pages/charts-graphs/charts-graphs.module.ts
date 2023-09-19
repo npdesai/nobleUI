@@ -11,6 +11,8 @@ import { NgChartsModule } from 'ng2-charts';
 import { ChartsGraphsComponent } from './charts-graphs.component';
 import { ApexchartsComponent } from './apexcharts/apexcharts.component';
 import { ChartjsComponent } from './chartjs/chartjs.component';
+import { ChartModule, CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
+  SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService, AccumulationChartAllModule, ChartAllModule, DataLabelService, LegendService, TooltipService, RangeNavigatorAllModule } from '@syncfusion/ej2-angular-charts';
 
 const routes: Routes = [
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     NgApexchartsModule, // Ng-ApexCharts
     NgChartsModule, // Ng2-charts
-  ]
+    ChartModule,
+    AccumulationChartAllModule,
+    ChartAllModule,       
+    RangeNavigatorAllModule,
+    
+  ],
+  providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
+    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService,TooltipService,LineSeriesService
+    ,CategoryService,DataLabelService,LegendService, ]
 })
 export class ChartsGraphsModule { }
