@@ -101,7 +101,7 @@ let holidayEvents= [
     start: TODAY_STR() +'-04',
     end: TODAY_STR() +'-06',
     title: 'Feast Day',
-    backgroundColor: 'rgba(241,0,117,.25)',
+    backgroundColor: '#FFEDEA',
     borderColor: '#f10075'
   },
   {
@@ -109,7 +109,7 @@ let holidayEvents= [
     start: TODAY_STR() +'-26',
     end: TODAY_STR() +'-27',
     title: 'Memorial Day',
-    backgroundColor: 'rgba(241,0,117,.25)',
+    backgroundColor: '#FFEDEA',
     borderColor: '#f10075'
   },
   {
@@ -117,7 +117,7 @@ let holidayEvents= [
     start: TODAY_STR() +'-28',
     end: TODAY_STR() +'-29',
     title: 'Veteran\'s Day',
-    backgroundColor: 'rgba(241,0,117,.25)',
+    backgroundColor: '#FFEDEA',
     borderColor: '#f10075'
   }
 ];
@@ -139,7 +139,7 @@ let meetupEvents= [
     start: TODAY_STR() +'-03',
     end: TODAY_STR() +'-05',
     title: 'UI/UX Meetup Conference',
-    backgroundColor: 'rgba(91,71,251,.2)',
+    backgroundColor: '#F5EEFF',
     borderColor: '#5b47fb'
   },
   {
@@ -147,7 +147,7 @@ let meetupEvents= [
     start: TODAY_STR() +'-18',
     end: TODAY_STR() +'-20',
     title: 'Angular Conference Meetup',
-    backgroundColor: 'rgba(91,71,251,.2)',
+    backgroundColor: '#F5EEFF',
     borderColor: '#5b47fb'
   }
 ];
@@ -158,7 +158,7 @@ let otherEvents= [
     start: TODAY_STR() +'-06',
     end: TODAY_STR() +'-08',
     title: 'My Rest Day',
-    backgroundColor: 'rgba(253,126,20,.25)',
+    backgroundColor: '#FFEEE2',
     borderColor: '#fd7e14'
   },
   {
@@ -166,7 +166,7 @@ let otherEvents= [
     start: TODAY_STR() +'-29',
     end: TODAY_STR() +'-31',
     title: 'My Rest Day',
-    backgroundColor: 'rgba(253,126,20,.25)',
+    backgroundColor: '#FFEEE2',
     borderColor: '#fd7e14'
   }
 ];
